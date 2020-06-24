@@ -8,12 +8,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+:root {
+  --main-bg-color: coral;
+  --primary: #f77b28;
+  --primary-light: #ff9957;
+  --secondary-dark: #4c4c4c;
+}
+
 a {
   color: #fff;
 }
 
 a :hover {
-  color: #f77b28;
+  color: var(--primary);
+}
+
+li {
+  list-style-type: none;
 }
 
 @media (min-width: 576px) {

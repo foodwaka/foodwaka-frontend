@@ -50,10 +50,7 @@ const HeaderContainer = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div
-            id="navbarSupportedContent"
-            className="collapse navbar-collapse "
-          >
+          <div id="navbarSupportedContent" className="collapse navbar-collapse">
             <ul className="navbar-nav ml-auto">
               <li className={`nav-item active`}>
                 <a href="#" className="nav-link">

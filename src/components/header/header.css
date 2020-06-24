@@ -1,8 +1,8 @@
 .navbar-nav a:link {
-  color: #4c4c4c !important;
+  color: var(--secondary-dark) !important;
 }
 .navbar-nav a:hover {
-  color: #f57622 !important;
+  color: var(--primary) !important;
 }
 
 .navbar-nav a {

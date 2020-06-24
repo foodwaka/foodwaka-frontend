@@ -58,10 +58,11 @@ const Welcome = () => {
         </div>
         <div className="">
           <a href="https://www.facebook.com/foodwaka">
-            {" "}
             <i className="fa fa-facebook m-3" aria-hidden="true"></i>
           </a>
-          <i className="fa fa-instagram m-3" aria-hidden="true"></i>
+          <a href="https://www.instagram.com/_foodwaka/">
+            <i className="fa fa-instagram m-3" aria-hidden="true"></i>
+          </a>
           <a href="https://twitter.com/_foodwaka">
             <i className="fa fa-twitter m-3" aria-hidden="true"></i>
           </a>
