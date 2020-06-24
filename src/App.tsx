@@ -113,7 +113,7 @@ const App = () => {
           <div></div>
         </div>
 
-        <form className="container mt-2 mb-3">
+        <form className="container  mt-2 mb-3">
           <div className="row">
             <div className=" mx-auto col-md-9">
               <input
