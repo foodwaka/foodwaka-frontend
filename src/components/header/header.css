@@ -1,0 +1,10 @@
+.navbar-nav a:link {
+  color: #4c4c4c !important;
+}
+.navbar-nav a:hover {
+  color: #f57622 !important;
+}
+
+.navbar-nav a {
+  font-weight: lighter !important;
+}

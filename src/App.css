@@ -2,7 +2,7 @@
   text-align: center;
   width: 100%;
   position: absolute;
-  background: url("./dan-gold-4_jhDO54BYg-unsplash\ 1.png"),
+  background: url("./welcome_bg.png"),
     linear-gradient(rgba(169, 84, 4, 0.7), rgba(169, 84, 4, 0.7));
   background-size: inherit;
   background-blend-mode: overlay;
@@ -76,9 +76,8 @@
 }
 
 .btn-custom-primary {
-  height: 44px;
   color: #fff;
-  padding: 6px 0px;
+
   background: #f77b28 !important;
   border-radius: 22px 22px 22px 22px;
 }
