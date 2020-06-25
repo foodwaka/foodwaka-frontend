@@ -1,0 +1,18 @@
+.home-container {
+  background-color: var(--secondary-light);
+  color: var(--secondary-dark);
+}
+
+.home-container a {
+  text-decoration: none;
+  color: var(--secondary-dark);
+}
+
+.btn-round {
+  background-color: var(--primary-light);
+  width: 54px;
+  height: 54px;
+  border-radius: 27px;
+  color: var(--white);
+  margin: 0px 6px 0px 6px;
+}

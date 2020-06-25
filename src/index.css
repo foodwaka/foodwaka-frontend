@@ -13,6 +13,7 @@ body {
   --primary: #f77b28;
   --primary-light: #ff9957;
   --secondary-dark: #4c4c4c;
+  --secondary-light: #e5e5e5;
 }
 
 button:focus {
