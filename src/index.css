@@ -15,12 +15,23 @@ body {
   --secondary-dark: #4c4c4c;
 }
 
+button:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
 a {
   color: #fff;
 }
 
 a :hover {
   color: var(--primary);
+  text-decoration: none;
 }
 
 li {

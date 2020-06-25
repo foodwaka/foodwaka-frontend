@@ -13,3 +13,67 @@
   display: inline;
   margin-right: 40px;
 }
+
+.footer-link {
+}
+.footer-link h4 {
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  position: relative;
+  font-weight: 700;
+}
+.footer-link h4::before {
+  border-bottom: 3px solid #e67b0c;
+  content: "";
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  bottom: 3px;
+  left: 0px;
+}
+.footer-link ul li {
+  margin-right: 5px;
+}
+.footer-link ul span {
+  padding-left: 15px;
+}
+
+.footer-link ul li a {
+  color: #ffffff;
+  text-align: left;
+  display: block;
+  line-height: 32px;
+  position: relative;
+  padding-left: 15px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+/* .footer-link ul li a::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f105";
+  font-weight: 900;
+  position: absolute;
+  left: 5px;
+  line-height: 35px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+.footer-link ul li a:hover::before {
+  left: 5px;
+} */
+.footer-link ul li a:hover {
+  color: #e67b0c;
+  border-color: #e67b0c;
+  padding-left: 20px;
+  text-decoration: none;
+}

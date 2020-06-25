@@ -3,6 +3,7 @@ import "./footer.css";
 import PhoneImage from "./phone.svg";
 import LogoPrimary from "logo_primary.svg";
 import PlayStoreIcon from "./playstoreIcon.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -21,24 +22,38 @@ const Footer = () => {
               <span className="font-weight-bold ">FoodWaka</span>
             </a>
           </div>
-          <div className="col-md-4">
+          <div className="footer-link col-md-4">
             <ul>
-              <li>About FoodWaka</li>
-              <li>Sign in</li>
-              <li>Become a seller</li>
-              <li>Nutrition and diet tips</li>
+              <li>
+                <Link to="#">About FoodWaka</Link>
+              </li>
+              <li>
+                <Link to="#">Sign in</Link>
+              </li>
+              <li>
+                <Link to="#">Become a seller</Link>
+              </li>
+              <li>
+                <Link to="#">Nutrition and diet tips</Link>
+              </li>
             </ul>
           </div>
-          <div className="col-md-5">
+          <div className="footer-link col-md-5">
             <ul>
-              <li>Get help</li>
-              <li>View all cities</li>
-              <li>Read FAQs</li>
+              <li>
+                <Link to="#">Get help</Link>
+              </li>
+              <li>
+                <Link to="#">View all cities</Link>
+              </li>
+              <li>
+                <Link to="#">Read FAQs</Link>
+              </li>
             </ul>
           </div>
         </div>
         <div className="row py-5 mt-5">
-          <div className="col-md-3">
+          <div className="col-md-3 col-xs-12">
             <a href="https://www.facebook.com/foodwaka">
               <i className="fa fa-facebook m-3" aria-hidden="true"></i>
             </a>
@@ -49,8 +64,8 @@ const Footer = () => {
               <i className="fa fa-twitter m-3" aria-hidden="true"></i>
             </a>
           </div>
-          <div className="col-md-9">
-            <ul className="footer-nav">
+          <div className="footer-link col-md-9 col-xs-12">
+            <ul className="">
               <li>
                 <a href="#">Private Policy</a>
               </li>
@@ -61,7 +76,7 @@ const Footer = () => {
                 <a href="#">Pricing</a>
               </li>
               <li>
-                <a href="#">2020 Davak Consult</a>
+                <span>2020 Davak Consult</span>
               </li>
             </ul>
           </div>

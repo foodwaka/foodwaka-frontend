@@ -1,12 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import useImportScript from "utils/useImportScript";
 import { BASE_URL } from "constants/urls";
 import Axios from "axios";
 import LogoWhite from "logo_white.svg";
 import foodLogo from "combination_logo.png";
+import {
+  requestReset,
+  RequestState,
+  requestSending,
+  requestSuccess,
+  requestError,
+} from "actions/requestStates";
+
+//alert
+import { useAlert } from "react-alert";
 
 const Welcome = () => {
   useImportScript("./assets/js/countDownTimer.js");
+
+  //alert
+  const alert = useAlert();
 
   const intialFormState: string = "";
   const [form, setForm] = useState(intialFormState);
@@ -23,16 +36,34 @@ const Welcome = () => {
     sendMail(form);
   };
 
+  const [requestState, setRequestState] = useState<RequestState>(requestReset);
+  const { sending, success, error, message } = requestState;
+
+  useEffect(() => {
+    success &&
+      alert.show(`${message}`, {
+        type: "success",
+      });
+    error &&
+      alert.show(`${message}`, {
+        type: "error",
+      });
+  }, [success, error, message, alert]);
+
   const sendMail = (form: string) => {
     const url: string = `${BASE_URL}/mail/sendWelcomeMail`;
+
+    setRequestState(requestSending()); //request about to be sent
 
     Axios.post(url, {
       email: form,
     })
       .then(() => {
+        setRequestState(requestSuccess("Email successfully submitted"));
         console.log("Mail sent");
       })
       .catch((error) => {
+        setRequestState(requestError(error.message));
         console.log("Error", error.message);
       });
   };
@@ -131,7 +162,8 @@ const Welcome = () => {
                 type="submit"
                 className="btn btn-lg btn-block btn-custom-primary"
               >
-                SUBMIT
+                SUBMIT{" "}
+                {sending && <i className="fa fa-circle-o-notch fa-spin"></i>}
               </button>
             </div>
           </div>

@@ -1,5 +1,6 @@
 .navbar-nav a:link {
   color: var(--secondary-dark) !important;
+  text-decoration: solid;
 }
 .navbar-nav a:hover {
   color: var(--primary) !important;
