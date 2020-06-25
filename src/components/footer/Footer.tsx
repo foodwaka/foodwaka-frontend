@@ -10,8 +10,8 @@ const Footer = () => {
     <>
       <FooterPrimary />
       <div className="container-fluid footer-secondary pt-5 px-5">
-        <div className="row pt-5">
-          <div className="col-md-3">
+        <div className="row ">
+          <div className="pt-5 col-md-3">
             <a href="#" className="navbar-brand">
               <img
                 src={LogoPrimary}
@@ -22,7 +22,7 @@ const Footer = () => {
               <span className="font-weight-bold ">FoodWaka</span>
             </a>
           </div>
-          <div className="footer-link col-md-4">
+          <div className="footer-link pt-5 col-md-4">
             <ul>
               <li>
                 <Link to="#">About FoodWaka</Link>
@@ -38,7 +38,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="footer-link col-md-5">
+          <div className="footer-link pt-5 col-md-5 ">
             <ul>
               <li>
                 <Link to="#">Get help</Link>
@@ -52,8 +52,8 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="row py-5 mt-5">
-          <div className="col-md-3 col-xs-12">
+        <div className="row pb-5">
+          <div className="footer-social mt-5 col-md-3 col-xs-12">
             <a href="https://www.facebook.com/foodwaka">
               <i className="fa fa-facebook m-3" aria-hidden="true"></i>
             </a>
@@ -64,7 +64,7 @@ const Footer = () => {
               <i className="fa fa-twitter m-3" aria-hidden="true"></i>
             </a>
           </div>
-          <div className="footer-link col-md-9 col-xs-12">
+          <div className="footer-link mt-5 col-md-9 col-xs-12">
             <ul className="">
               <li>
                 <a href="#">Private Policy</a>
@@ -75,7 +75,7 @@ const Footer = () => {
               <li>
                 <a href="#">Pricing</a>
               </li>
-              <li>
+              <li className="mt-5">
                 <span>2020 Davak Consult</span>
               </li>
             </ul>
@@ -91,16 +91,16 @@ const FooterPrimary = () => {
     <>
       <div className="container-fluid footer-primary">
         <div className="row">
-          <div className="col-md-6 col-sm-12 pt-5 mx-auto">
+          <div className="col-md-6 col-sm-12 pl-5 pt-5 mx-auto">
             <img src={PhoneImage} alt="download app" />
           </div>
-          <div className="col-md-6 col-sm-12">
-            <h2 className="mt-5 pt-5">FoodWaka Mobile App</h2>
+          <div className="p-5 col-md-6 col-sm-12">
+            <h2 className="py-5">FoodWaka Mobile App</h2>
             <p>
               Download FoodWaka Mobile app from Google Play Store to purchase
               your favorite food conveniently from your smartphone.
             </p>
-            <h5>
+            <h5 className="py-5">
               <img src={PlayStoreIcon} alt="download app" /> Download Mobile App
             </h5>
           </div>

@@ -8,6 +8,9 @@
   background-color: var(--secondary-dark);
   color: #fff;
 }
+.footer-secondary a {
+  color: var(--white);
+}
 
 .footer-nav * {
   display: inline;
@@ -72,8 +75,18 @@
   left: 5px;
 } */
 .footer-link ul li a:hover {
-  color: #e67b0c;
-  border-color: #e67b0c;
+  color: var(--primary);
+  border-color: var(---primary);
   padding-left: 20px;
   text-decoration: none;
+}
+
+.footer-social a:hover {
+  color: var(--primary) !important;
+  font-size: 30px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
 }

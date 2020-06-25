@@ -77,7 +77,7 @@ const Welcome = () => {
             <a href="#" className="navbar-brand">
               <img
                 src={foodLogo}
-                width="100vw"
+                width="150px"
                 className="d-none d-md-block logo"
               />
             </a>
