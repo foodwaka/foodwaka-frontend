@@ -87,7 +87,7 @@ const Welcome = () => {
         <div className="d-md-none" style={{ fontSize: "40px" }}>
           <img height="40px" src={LogoWhite} alt="logo" /> FoodWaka
         </div>
-        <div className="">
+        <div className="links-social">
           <a href="https://www.facebook.com/foodwaka">
             <i className="fa fa-facebook m-3" aria-hidden="true"></i>
           </a>

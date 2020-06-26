@@ -53,7 +53,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="row pb-5">
-          <div className="footer-social mt-5 col-md-3 col-xs-12">
+          <div className="links-social mt-5 col-md-3 col-xs-12">
             <a href="https://www.facebook.com/foodwaka">
               <i className="fa fa-facebook m-3" aria-hidden="true"></i>
             </a>
