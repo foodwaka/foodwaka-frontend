@@ -44,6 +44,7 @@ const Welcome = () => {
       alert.show(`${message}`, {
         type: "success",
       });
+    success && setForm(intialFormState);
     error &&
       alert.show(`${message}`, {
         type: "error",

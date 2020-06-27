@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo from "./logo.svg";
-import "./App.css";
+import "./App.scss";
 import foodLogo from "./FoodWaka Logo Side Light Font Asset  -inkscape 1.png";
 
 import useImportScript from "./utils/useImportScript";

@@ -1,7 +1,7 @@
 html,
 body {
   margin: 0;
-
+  width: 100%;
   height: 100%;
   font-family: "Quicksand", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -14,6 +14,11 @@ body {
   --primary-light: #ff9957;
   --secondary-dark: #4c4c4c;
   --secondary-light: #e5e5e5;
+  --star-yellow: #f2c94c;
+}
+#root {
+  width: 100%;
+  height: 100%;
 }
 
 button:focus {

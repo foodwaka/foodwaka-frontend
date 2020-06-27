@@ -71,7 +71,7 @@
 
 .form-control {
   height: 50px;
-  background: #f6f6f6;
+  /* background: #f6f6f6; */
   border-radius: 22px 22px 22px 22px;
 }
 
@@ -97,4 +97,8 @@
 
 .links-social a {
   color: var(--white) !important;
+}
+
+.form-label {
+  color: var(--secondary-dark) !important;
 }

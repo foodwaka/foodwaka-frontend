@@ -104,7 +104,7 @@ const HeaderJumbo = () => {
             </p>
 
             <form className="row">
-              <div className="input-group mb-3 col-8 mx-auto">
+              <div className="input-group mb-3 col-md-8 col-12 mx-auto">
                 <input
                   type="text"
                   className="form-control"

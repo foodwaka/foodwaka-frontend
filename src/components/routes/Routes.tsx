@@ -5,6 +5,10 @@ import { createBrowserHistory } from "history";
 //components
 import Welcome from "components/welcome";
 import Home from "components/home";
+import Login from "components/login";
+import Register from "components/register";
+import VerifyPhone from "components/verify-phone";
+import SetPassword from "components/set-password";
 
 export const history = createBrowserHistory();
 
@@ -14,6 +18,10 @@ const Routes = () => {
       <Router history={history}>
         <Route exact path="/" component={Welcome} />
         <Route path="/home" component={Home} />
+        <Route path="/login" component={Login} />
+        <Route path="/register" component={Register} />
+        <Route path="/verify-phone" component={VerifyPhone} />
+        <Route path="/set-password" component={SetPassword} />
       </Router>
     </>
   );
