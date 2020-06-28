@@ -9,6 +9,7 @@ import Login from "components/login";
 import Register from "components/register";
 import VerifyPhone from "components/verify-phone";
 import SetPassword from "components/set-password";
+import Store from "components/store";
 
 export const history = createBrowserHistory();
 
@@ -22,6 +23,7 @@ const Routes = () => {
         <Route path="/register" component={Register} />
         <Route path="/verify-phone" component={VerifyPhone} />
         <Route path="/set-password" component={SetPassword} />
+        <Route path="/store" component={Store} />
       </Router>
     </>
   );
