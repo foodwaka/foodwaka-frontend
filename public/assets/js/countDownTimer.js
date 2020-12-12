@@ -1,5 +1,3 @@
-var endtime = new Date("Jan 31, 2021 00:00:00").getTime();
-
 function getTimeRemaining(endtime) {
   var t = endtime - new Date().getTime();
   var days = Math.floor(t / (1000 * 60 * 60 * 24));
@@ -42,7 +40,6 @@ function initializeClock(id, endtime) {
 
 //var deadline = new Date(Date.parse(new Date()) + 10 * 24 * 60 * 60 * 1000);
 //var deadline = new Date().getTime() + (1000 * 60 * 60 * 24);
-var deadline =
-  new Date("Aug 31, 2020 00:00:00").getTime() + 1000 * 60 * 60 * 24;
+var deadline = new Date("Feb 31, 2021 00:00:00").getTime() + 1000 * 60 * 60 * 24;
 
 initializeClock("clockdiv", deadline);
