@@ -144,12 +144,12 @@ const StoreHeader = () => {
             </div>
             <div className="d-flex justify-content-between">
               <div className="row mt-3">
-                <div className="col-3 mx-2">
+                <div className="col-3 mx-3">
                   <a href="#" className="py-1 px-3 badge badge-light">
                     Tag 1
                   </a>
                 </div>
-                <div className="col-3 mx-2">
+                <div className="col-3 mx-3">
                   <a href="#" className="py-1 px-3 badge badge-light">
                     Tag 2
                   </a>

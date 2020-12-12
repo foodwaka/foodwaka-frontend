@@ -20,12 +20,7 @@ const Login = () => {
                 <i className="fa fa-envelope" aria-hidden="true"></i>
               </div>
             </div>
-            <input
-              type="text"
-              className="form-control"
-              id="login-email"
-              placeholder="Type your email or phone number"
-            />
+            <input type="text" className="form-control" id="login-email" placeholder="Type your email or phone number" />
           </div>
         </div>
 
@@ -37,12 +32,7 @@ const Login = () => {
                 <i className="fa fa-lock" aria-hidden="true"></i>
               </div>
             </div>
-            <input
-              type="password"
-              className="form-control"
-              id="login-email"
-              placeholder="Type your password"
-            />
+            <input type="password" className="form-control" id="login-email" placeholder="Type your password" />
           </div>
         </div>
         <div className="col-md-7 col-sm-10  mx-auto">

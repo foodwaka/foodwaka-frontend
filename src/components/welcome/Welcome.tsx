@@ -4,13 +4,7 @@ import { BASE_URL } from "constants/urls";
 import Axios from "axios";
 import LogoWhite from "logo_white.svg";
 import foodLogo from "combination_logo.png";
-import {
-  requestReset,
-  RequestState,
-  requestSending,
-  requestSuccess,
-  requestError,
-} from "actions/requestStates";
+import { requestReset, RequestState, requestSending, requestSuccess, requestError } from "actions/requestStates";
 
 //alert
 import { useAlert } from "react-alert";
@@ -28,10 +22,7 @@ const Welcome = () => {
     setForm(event.target.value);
   };
 
-  const handleFormSubmit = (
-    event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
-    form: string
-  ) => {
+  const handleFormSubmit = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>, form: string) => {
     event.preventDefault();
     sendMail(form);
   };
@@ -76,11 +67,7 @@ const Welcome = () => {
         <nav className="navbar navbar-expand-lg py-3 navbar-dark w-100">
           <div className="container">
             <a href="#" className="navbar-brand">
-              <img
-                src={foodLogo}
-                width="150px"
-                className="d-none d-md-block logo"
-              />
+              <img src={foodLogo} width="150px" className="d-none d-md-block logo" />
             </a>
           </div>
         </nav>
@@ -102,19 +89,11 @@ const Welcome = () => {
 
         <section className="">
           <div className="container ">
-            <h1
-              className="mb-2 mt-2"
-              style={{ fontWeight: "bolder", fontSize: "60px" }}
-            >
+            <h1 className="mb-2 mt-2" style={{ fontWeight: "bolder", fontSize: "60px" }}>
               Coming Soon
             </h1>
 
-            <p className="">
-              FoodWaka helps you buy food conveniently by connecting you with
-              food vendors, retaurants and people who sell food-related items
-              like fresh vegetable, meat, fruit, snacks, drinks and cooked food
-              around you.
-            </p>
+            <p className="">FoodWaka helps you buy food conveniently by connecting you with food vendors, retaurants and people who sell food-related items like fresh vegetable, meat, fruit, snacks, drinks and cooked food around you.</p>
 
             <h3>Let us notify you when FoodWaka is launching</h3>
           </div>
@@ -146,25 +125,11 @@ const Welcome = () => {
         <form className="container mt-2 mb-3">
           <div className="row">
             <div className=" mx-auto col-md-9">
-              <input
-                type="email"
-                className="form-control "
-                id="email"
-                aria-describedby="emailHelp"
-                placeholder="Your email address"
-                name="email"
-                value={form}
-                onChange={handleFormChange}
-              />
+              <input type="email" className="form-control " id="email" aria-describedby="emailHelp" placeholder="Your email address" name="email" value={form} onChange={handleFormChange} />
             </div>
             <div className="col-lg-5 col-md-8 mx-auto mt-4">
-              <button
-                onClick={(event) => handleFormSubmit(event, form)}
-                type="submit"
-                className="btn btn-lg btn-block btn-custom-primary"
-              >
-                SUBMIT{" "}
-                {sending && <i className="fa fa-circle-o-notch fa-spin"></i>}
+              <button onClick={(event) => handleFormSubmit(event, form)} type="submit" className="btn btn-lg btn-block btn-custom-primary">
+                SUBMIT {sending && <i className="fa fa-circle-o-notch fa-spin"></i>}
               </button>
             </div>
           </div>

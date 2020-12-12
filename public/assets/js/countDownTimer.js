@@ -1,4 +1,4 @@
-var endtime = new Date("Aug 31, 2020 00:00:00").getTime();
+var endtime = new Date("Jan 31, 2021 00:00:00").getTime();
 
 function getTimeRemaining(endtime) {
   var t = endtime - new Date().getTime();
